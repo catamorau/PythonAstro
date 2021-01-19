@@ -1,0 +1,46 @@
+Comandos Tarea 3
+
+Parte 1:
+
+clonar repositorio: git clone https://github.com/gdamke/ExercisePython2020.git
+Ir a la carpeta ExercisePython2020
+Editor de texto: code Programa.py 
+
+Luego de implementar la función suma:
+git status
+git add Programa.py 
+git commit -m "Cata: funcion suma"
+git push
+
+
+Parte 2:
+
+2.1
+Se crea la rama cuadrado:  git branch cuadrado
+Me muevo a la rama cuadrado: git checkout cuadrado
+En Programa.py defino la función cuadrado (sin implementar)
+Verificar los cambios: git status
+Añadir los cambios al repositorio: git add Programa.py
+Confirmamos los cambios: git commit -m "def cuadrado fix"
+Subimos los mcabios locales al repositorio: git push
+
+2.2
+Ahora para implementar la función raíz_cuadrada (de Silvio) debo moverme a esa rama:
+git checkout raiz_cuadrada
+En Programa.py se implementa la función raíz cuadrada.
+Verificamos los cambios: git status
+Añadir los cambios al repositorio: git add Programa.py
+Confirmamos los cambios: git commit -m "implementar raíz_cuadrada"
+Subimos los cambios locales al repositorio: git push
+
+
+2.3
+Para hacer el merge de la rama creada a la rama master:  
+git checkout master
+git merge raiz_cuadrada
+Abro en la página el pull request y verificamos y si no hay conflictor acepto el pr.
+Abriendo Programa.py veo que esté implementado lo realizado
+
+
+
+
